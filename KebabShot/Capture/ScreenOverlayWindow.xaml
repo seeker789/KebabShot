@@ -1,0 +1,21 @@
+﻿<Window x:Class="KebabShot.Capture.ScreenOverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ShowInTaskbar="False"
+        Topmost="True"
+        WindowState="Maximized"
+        Cursor="Cross">
+
+    <Canvas x:Name="OverlayCanvas">
+        <Image x:Name="BackgroundImage"/>
+        <Rectangle x:Name="SelectionRectangle"
+                   Stroke="DeepSkyBlue"
+                   StrokeThickness="2"
+                   Fill="#40FFFFFF"
+                   Visibility="Collapsed"/>
+    </Canvas>
+</Window>
